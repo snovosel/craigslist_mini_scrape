@@ -1,0 +1,18 @@
+<!DOCTYPE HTML>
+<head>
+	<title> Craigslist </title>
+</head>
+
+<body>
+
+	<a href='http://127.0.0.1:5000/'> Home </a>
+
+	<div>
+		<ul>
+			{% for item in items.get_results(sort_by='newest', limit=5) %}
+				<li> {{ item['name'].encode('utf-8'), item['price'].encode('utf-8')  }} </li>
+			{% endfor %}
+		</ul>
+	</div>
+
+</body>

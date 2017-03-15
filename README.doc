@@ -1,0 +1,9 @@
+1. python to fetch the data from Craigslist
+
+2. python to send the data to an email address.
+
+    Essentially you want to make all of the variables from the backend
+    accessible to the user in the browser.
+
+    forms, location/category/price/
+

@@ -1,0 +1,19 @@
+<!doctype HTML>
+
+<head>
+	<title> Your results </title>
+</head>
+
+<body>
+
+	<div>
+		<ul>
+			{% for item in items.get_results(sort_by='newest', limit=5) %}
+				<li> {{ item['name'].encode('utf-8'), item['price'].encode('utf-8')  }} </li>
+			{% endfor %}
+		</ul>
+	</div>
+
+</body>
+
+</html>
